@@ -1,3 +1,4 @@
+import { Tooltip } from "../module_additions/Tooltip.js";
 export const Experience = (title, experiences) => {
   const titleMarkup = `
         <h2>${title}</h2>
@@ -20,6 +21,7 @@ export const Experience = (title, experiences) => {
     titleMarkup +
     experienceList +
     `</div>`;
-
+  const functionMarkup = Experience.toString();
+  markup += functionMarkup;
   document.body.innerHTML += markup;
 };

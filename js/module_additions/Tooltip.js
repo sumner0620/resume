@@ -1,4 +1,4 @@
-export const Tootip = (
+export const Tooltip = (
   description = "",
   code = "",
   buttonLink = "",
@@ -14,5 +14,5 @@ export const Tootip = (
     markup += `<a href="${buttonLink}" target="_blank">${buttonLabel}</a>`;
   }
 
-  document.body.innerHTML += markup;
+  return markup;
 };
