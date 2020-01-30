@@ -1,3 +1,2 @@
 # resume
-Online resume
-Live Site: douglassumner.com
+Online resume: <a href="douglassumner.com">Live Site</a>
