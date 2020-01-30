@@ -1,0 +1,13 @@
+.experiences {
+  aside.experience {
+    margin: 12px 0;
+    .position-details {
+      span {
+        color: $purple;
+      }
+      .job-description {
+        font-style: italic;
+      }
+    }
+  }
+}
