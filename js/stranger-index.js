@@ -1,6 +1,7 @@
 import { Header } from "./modules/Header.js";
 import { Skillset } from "./modules/Skillset.js";
 import { Experience } from "./modules/Experience.js";
+import { SongPlayer } from "./basecamp/modules/SongPlayer.js";
 
 Header(
   `<div class="flex">
@@ -9,7 +10,7 @@ Header(
   "774-200-4059",
   "jdsumner0620@gmail.com"
 );
-
+SongPlayer("/assets/sounds/TheNeverendingStory.mp3");
 Skillset([
   {
     title: "Languages/Concepts",

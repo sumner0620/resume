@@ -1,5 +1,4 @@
 export const Header = (title, location, phone, email) => {
-  console.log("working");
   const markup = `
     <header class='main-header flex row container afc jfsb'>
       <div id='title'>
