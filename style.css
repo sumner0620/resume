@@ -510,7 +510,8 @@ body {
 
 .container {
   max-width: 1024px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 15px; }
 
 header.main-header #contact {
   text-align: center; }
@@ -522,4 +523,5 @@ header.main-header #contact {
   .experiences aside.experience .position-details span {
     color: #7898fb; }
   .experiences aside.experience .position-details .job-description {
-    font-style: italic; }
+    font-style: italic;
+    margin-top: 12px; }

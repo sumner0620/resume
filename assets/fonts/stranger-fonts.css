@@ -1,0 +1,8 @@
+@font-face {
+  font-family: BenguiatITCbyBT;
+  src: url("/assets/fonts/BenguiatITCbyBT-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: texgyreadventor;
+  src: url("/assets/fonts/texgyreadventor-regular.otf") format("opentype");
+}

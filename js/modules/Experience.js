@@ -6,10 +6,10 @@ export const Experience = (title, experiences) => {
   const experienceList = experiences
     .map(function(experience) {
       return `<aside class="experience flex row">
-            <div class="dates">
+            <div class="dates item_1_5">
                 ${experience.startDate} - ${experience.endDate}
             </div>
-            <div class="position-details">
+            <div class="position-details item_4_5">
                 <div><span>${experience.company}</span>, ${experience.companyLocation} — ${experience.title}</div>
                 <div class="job-description">${experience.description}</div>
             </div>
@@ -21,7 +21,7 @@ export const Experience = (title, experiences) => {
     titleMarkup +
     experienceList +
     `</div>`;
-  const functionMarkup = Experience.toString();
-  markup += functionMarkup;
+  //   const functionMarkup = Experience.toString();
+  //   markup += functionMarkup;
   document.body.innerHTML += markup;
 };

@@ -1,0 +1,91 @@
+@keyframes scaleDown {
+  0% {
+    transform: scale(21);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+body {
+  background-image: url("/assets/images/strange.jpg");
+  font-family: texgyreadventor;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  font-size: 21px;
+}
+h1 {
+  font-family: BenguiatITCbyBT;
+  font-size: 72px;
+  text-align: center;
+  animation: scaleDown 3.5s;
+  color: #000;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red;
+}
+h1 .flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+h1 span.big {
+  font-size: 102px;
+  line-height: 0.9;
+}
+h1 span#bottom {
+  margin-top: -1px;
+  display: block;
+  margin-top: -28px;
+  font-size: 53px;
+}
+#stranger-cv {
+  margin: 0 auto;
+  padding: 12px 18px;
+  max-width: 1024px;
+}
+#stranger-cv br {
+  margin-bottom: 24px;
+  content: " ";
+  display: block;
+}
+#button-area {
+  display: flex;
+  width: 100%;
+}
+#button-area::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#button-area a {
+  background-color: transparent;
+  border: 1px solid red;
+  padding: 14px 18px 12px;
+  color: red;
+  transition: 0.3s all ease;
+  margin: 21px auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.8;
+  transform: scale(1);
+  animation: pulse 1s infinite;
+}
+#button-area a:hover {
+  color: black;
+  background-color: red;
+  transition: 0.3s all ease;
+}

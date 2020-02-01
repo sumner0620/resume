@@ -3,7 +3,8 @@ import { Skillset } from "./modules/Skillset.js";
 import { Experience } from "./modules/Experience.js";
 
 Header(
-  "Douglas Sumner | Software Engineer",
+  `<div class="flex">
+  <span class="big">D</span><span id="middle">ouglas Sumne</span><span class="big">r</span></div><span id="bottom">Software Developer</span>`,
   "Worcester, MA",
   "774-200-4059",
   "jdsumner0620@gmail.com"
@@ -56,7 +57,7 @@ Experience("Relevant Experience", [
       "Build customized web-based software solutions per client needs, utilizing Javascript, PHP, MySQL, and many other web technologies. This was a full-stack role."
   },
   {
-    startDate: "04/2016",
+    startDate: "04/2017",
     endDate: "03/2018",
     company: "Self Employed",
     companyLocation: "Worcester, MA",
