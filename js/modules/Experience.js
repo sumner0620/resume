@@ -1,10 +1,10 @@
-import { Tooltip } from "../module_additions/Tooltip.js";
+import { Tooltip } from '../module_additions/Tooltip.js'
 export const Experience = (title, experiences) => {
   const titleMarkup = `
         <h2>${title}</h2>
-    `;
+    `
   const experienceList = experiences
-    .map(function(experience) {
+    .map(function (experience) {
       return `<aside class="experience flex row">
             <div class="dates item_1_5">
                 ${experience.startDate} - ${experience.endDate}
@@ -13,15 +13,15 @@ export const Experience = (title, experiences) => {
                 <div><span>${experience.company}</span>, ${experience.companyLocation} — ${experience.title}</div>
                 <div class="job-description">${experience.description}</div>
             </div>
-        </aside>`;
+        </aside>`
     })
-    .join("");
+    .join('')
   const markup =
-    '<div class="flex col container experiences">' +
+    '<section class="flex col container experiences">' +
     titleMarkup +
     experienceList +
-    `</div>`;
+    `</section>`
   //   const functionMarkup = Experience.toString();
   //   markup += functionMarkup;
-  document.body.innerHTML += markup;
-};
+  document.body.innerHTML += markup
+}

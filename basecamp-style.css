@@ -27,6 +27,7 @@ body {
   background-attachment: fixed;
   color: #fff;
   font-size: 21px;
+  overflow: hidden;
 }
 h1 {
   font-family: BenguiatITCbyBT;
