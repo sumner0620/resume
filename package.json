@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "just a resume",
   "main": "index.js",
+  "private": false,
   "scripts": {
     "sassify": "node-sass styles/sass/style.scss styles/style.css -w",
     "sassme": "node-sass styles/sass/main-style.scss styles/main-style.css -w"
   },
   "author": "douglas sumner",
   "license": "MIT",
-  "private": false,
   "devDependencies": {
     "node-sass": "^4.13.1"
   }
