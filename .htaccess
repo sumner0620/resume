@@ -1,3 +1,7 @@
 RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+## permanents
+Redirect 301 /basecamp.html https://www.douglassumner.com/

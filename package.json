@@ -4,7 +4,8 @@
   "description": "just a resume",
   "main": "index.js",
   "scripts": {
-    "sassify": "node-sass sass/style.scss style.css -w"
+    "sassify": "node-sass styles/sass/style.scss styles/style.css -w",
+    "sassme": "node-sass styles/sass/main-style.scss styles/main-style.css -w"
   },
   "author": "douglas sumner",
   "license": "MIT",
